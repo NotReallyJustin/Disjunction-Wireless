@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+  background-color: #272727;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  background-color: #4a269e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #4a269e;
+  margin-top: 3vh;
+  text-align: left;
+}
+
+h1 {
+  font: 48pt "Orbitron";
+  margin: 1% 1.5%;
+}
+
+.footer h1 {
+  margin: 0;
+  margin-left: 1%;
+  margin-top: 1.5%;
+}
+
+.footer div {
+  font: 24pt "Orbitron";
+  margin-left: 1%;
+}
+#shuffle {
+  margin-right: 3%;
+  min-width: 85px;
+  width: 10%; /*Ask how to make this logo responsive*/
+  height: auto;
+  transform: rotate(180deg);
+  cursor: pointer;
+  -webkit-user-drag: none;
+}
+
+.pad {
+  margin-top: auto; /*Connect w/ .header's height*/
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  color: black;
+  background-color: #78c7ff;
+  border-radius: 10px;
+  padding: 30px 10px;
+  margin: 0 25px;
+  width: 300px;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 26px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 5px 5px 26px 5px rgba(0, 0, 0, 0.24);
+}
+
+.card h4 {
+  line-height: 0;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+/* CSS Flexbox */
+.plan-rating {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.plan-rating.company .card {
+  background-color: greenyellow;
+}
+
+.plan-rating.customer .card {
+  background-color: lightcoral;
+}
+
+.miscellaneous {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.miscellaneous .card {
+  width: 80%;
+}
+
+/* CSS GRID */
+.customer-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.75fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+div.item {
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: 1.3em;
+}
+
+div.item span {
+  font-size: 0.6em;
+}
+
+.thead {
+  font-weight: 800;
+  font-size: 1.2em;
+  text-decoration: white solid underline;
+  padding-bottom: 10px;
+}
+
+.pieWrapper {
+  padding-left: 0%;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 60px auto;
+}
+
+#pie, #pie2 {
+  width: 50%;
+  height: 100%;
+}
+
+#label, #label2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  list-style: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.listo
+{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5%;
+}
+
+.listoColor
+{
+  /*height: 8vh*/
+  width: 30%;
+  min-width: 40px;
+  height: auto;
+}
+
+.listoItems
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.label-highlight {
+  font-size: 1.2em;
+  font-weight: bolder;
+}

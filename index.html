@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Disjunction Wireless</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="dataset.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="header" id="header">
+      <h1>Disjunction Wireless - Dashboard</h1>
+      <img src="Images/shuffle.png" id="shuffle" />
+    </div>
+    <div id="pad"></div>
+
+    <!-- A table of phone numbers, data usuage, data plan, monthly bills -->
+    <!-- Number of customers, best & worst plan for the company, percentage of people using best/worst plans, average overpayment -->
+
+    <section>
+      <h2>Plans</h2>
+      <div class="pieWrapper">
+        <div id="pie"></div>
+        <ul id="label">
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Customer Analysis</h2>
+      <div class="pieWrapper">
+        <div id="pie2"></div>
+        <ul id="label2">
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Company Analysis</h2>
+      <div class="company plan-rating">
+        <div class="best card">
+          <h4>Best Plan</h4>
+          <div class="plan-rating-plan">XXX</div>
+        </div>
+
+        <div class="worst card">
+          <h4>Worst Plan</h4>
+          <div class="plan-rating-plan">XXX</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <h2>Analysis - Customer</h2>
+    <div class="customer plan-rating">
+      <div class="best card">
+        <h4>Best Plan</h4>
+        <div class="plan-percentage">100%</div>
+      </div>
+      <div class="worst card">
+        <h4>Worst Plan</h4>
+        <div class="plan-percentage">100%</div>
+      </div>
+    </div> -->
+
+    <section>
+      <h2>Miscellaneous</h2>
+      <div class="miscellaneous">
+        <div class="card">
+          <h4>Average Overpayment</h4>
+          <div id="no-overpayment">$100</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="customer-list">
+        <h2>Customer</h2>
+        <div class="customer-table">
+          <div class="item thead">Phone Number</div>
+          <div class="item thead">Selected Plan</div>
+          <div class="item thead">Data Usuage</div>
+          <div class="item thead">Monthly Bills</div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="footer">
+      <h1>Disjunction Wireless</h1>
+      <div>Should have chose Verizon</div>
+    </div>
+  </body>
+</html>
